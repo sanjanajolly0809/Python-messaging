@@ -1,0 +1,192 @@
+2026-09-10 14:38:00,905 - INFO - Server started on 127.0.0.1:5000
+2026-09-10 14:38:19,428 - INFO - Client connected: ('127.0.0.1', 62450)
+2026-09-10 14:38:31,326 - INFO - User logged in: charlie
+2026-09-10 14:44:37,725 - ERROR - Error handling client ('127.0.0.1', 62450)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 80, in handle_client
+    # Receive one complete framed message.
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    message_data = receive_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        client_socket
+    
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-10 14:44:37,757 - INFO - User disconnected: charlie
+2026-09-10 14:44:37,758 - INFO - Connection closed: ('127.0.0.1', 62450)
+2026-09-10 14:44:44,953 - INFO - Server started on 127.0.0.1:5000
+2026-09-10 14:45:04,537 - INFO - Client connected: ('127.0.0.1', 56053)
+2026-09-10 14:45:13,689 - INFO - User logged in: charlie
+2026-09-10 14:47:36,003 - INFO - Server started on 127.0.0.1:5000
+2026-09-10 14:48:06,500 - INFO - Client connected: ('127.0.0.1', 51408)
+2026-09-10 14:48:36,851 - INFO - User logged in: charlie
+2026-09-10 14:53:14,156 - INFO - Client connected: ('127.0.0.1', 54776)
+2026-09-10 14:53:14,340 - WARNING - Duplicate login rejected: charlie
+2026-09-10 14:53:20,961 - INFO - Connection closed: ('127.0.0.1', 54776)
+2026-09-10 14:57:03,321 - INFO - Server started on 127.0.0.1:5000
+2026-09-10 14:57:28,785 - INFO - Client connected: ('127.0.0.1', 62145)
+2026-09-10 14:57:28,996 - INFO - User logged in: charlie
+2026-09-10 14:58:51,957 - ERROR - Error handling client ('127.0.0.1', 62145)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-10 14:58:51,962 - INFO - User disconnected: charlie
+2026-09-10 14:58:51,962 - INFO - Connection closed: ('127.0.0.1', 62145)
+2026-09-10 15:00:03,255 - INFO - Client connected: ('127.0.0.1', 58868)
+2026-09-10 15:00:03,457 - INFO - User logged in: charlie
+2026-09-10 15:00:16,125 - INFO - Broadcast message from charlie
+2026-09-10 15:01:38,305 - INFO - Client connected: ('127.0.0.1', 49293)
+2026-09-10 15:01:38,307 - WARNING - Failed login attempt: Bob
+2026-09-10 15:01:42,278 - INFO - Connection closed: ('127.0.0.1', 49293)
+2026-09-10 15:01:46,698 - INFO - Client connected: ('127.0.0.1', 49294)
+2026-09-10 15:01:46,882 - INFO - User logged in: bob
+2026-09-10 15:02:08,209 - INFO - Broadcast message from bob
+2026-09-13 14:21:58,320 - ERROR - Error handling client ('127.0.0.1', 49294)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-13 14:21:58,346 - INFO - User disconnected: bob
+2026-09-13 14:21:58,346 - INFO - Connection closed: ('127.0.0.1', 49294)
+2026-09-13 14:21:59,723 - ERROR - Error handling client ('127.0.0.1', 58868)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-13 14:21:59,727 - INFO - User disconnected: charlie
+2026-09-13 14:21:59,727 - INFO - Connection closed: ('127.0.0.1', 58868)
+2026-09-16 12:45:05,338 - INFO - Server started on 127.0.0.1:5000
+2026-09-16 12:45:44,942 - INFO - Client connected: ('127.0.0.1', 52965)
+2026-09-16 12:45:44,963 - WARNING - Failed login attempt: Charlie
+2026-09-16 12:45:47,905 - INFO - Connection closed: ('127.0.0.1', 52965)
+2026-09-16 12:45:52,362 - INFO - Client connected: ('127.0.0.1', 52967)
+2026-09-16 12:45:52,559 - INFO - User logged in: charlie
+2026-09-16 12:46:25,065 - INFO - Client connected: ('127.0.0.1', 52977)
+2026-09-16 12:46:25,247 - INFO - User logged in: bob
+2026-09-16 12:46:49,230 - INFO - Private message: bob -> bob
+2026-09-16 12:48:25,716 - INFO - Private message: charlie -> bob
+2026-09-16 12:49:46,009 - ERROR - Error handling client ('127.0.0.1', 52967)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-16 12:49:46,018 - INFO - User disconnected: charlie
+2026-09-16 12:49:46,019 - INFO - Connection closed: ('127.0.0.1', 52967)
+2026-09-16 12:49:47,886 - ERROR - Error handling client ('127.0.0.1', 52977)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-16 12:49:47,887 - INFO - User disconnected: bob
+2026-09-16 12:49:47,888 - INFO - Connection closed: ('127.0.0.1', 52977)
+2026-09-16 13:10:35,694 - INFO - Client connected: ('127.0.0.1', 64260)
+2026-09-16 13:10:35,751 - INFO - User logged in: charlie
+2026-09-17 10:39:22,227 - INFO - Client connected: ('127.0.0.1', 52268)
+2026-09-17 10:39:22,428 - WARNING - Duplicate login rejected: charlie
+2026-09-17 10:39:30,717 - INFO - Connection closed: ('127.0.0.1', 52268)
+2026-09-17 10:39:35,876 - ERROR - Error handling client ('127.0.0.1', 64260)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-17 10:39:35,892 - INFO - User disconnected: charlie
+2026-09-17 10:39:35,892 - INFO - Connection closed: ('127.0.0.1', 64260)
+2026-09-17 10:39:38,167 - INFO - Client connected: ('127.0.0.1', 52273)
+2026-09-17 10:39:38,366 - INFO - User logged in: charlie
+2026-09-17 10:40:27,018 - INFO - Client connected: ('127.0.0.1', 53967)
+2026-09-17 10:40:27,193 - INFO - User logged in: bob
+2026-09-17 10:40:43,422 - INFO - Broadcast message from charlie
+2026-09-17 10:41:44,341 - INFO - File transfer: charlie -> bob (B104 Assessment Brief.pdf)
+2026-09-17 10:54:49,291 - INFO - Client connected: ('127.0.0.1', 58639)
+2026-09-17 10:54:49,505 - INFO - New user registered: david
+2026-09-17 10:54:49,506 - INFO - Connection closed: ('127.0.0.1', 58639)
+2026-09-17 11:15:28,380 - ERROR - Error handling client ('127.0.0.1', 53967)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-17 11:15:28,396 - INFO - User disconnected: bob
+2026-09-17 11:15:28,396 - INFO - Connection closed: ('127.0.0.1', 53967)
+2026-09-17 11:15:31,182 - ERROR - Error handling client ('127.0.0.1', 52273)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\server.py", line 77, in handle_client
+    message_data = receive_message(
+        client_socket
+    )
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 41, in receive_message
+    header = recv_exact(sock, 4)
+  File "C:\Users\DELL\Documents\Python_Messaging_Project\protocol.py", line 25, in recv_exact
+    chunk = sock.recv(
+        number_of_bytes - len(data)
+    )
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-09-17 11:15:31,184 - INFO - User disconnected: charlie
+2026-09-17 11:15:31,184 - INFO - Connection closed: ('127.0.0.1', 52273)
+2026-09-17 11:15:38,940 - INFO - Server started on 127.0.0.1:5000
+2026-09-17 11:16:23,967 - INFO - Client connected: ('127.0.0.1', 63202)
+2026-09-17 11:16:24,146 - INFO - User logged in: charlie
+2026-09-17 11:16:59,676 - INFO - Client connected: ('127.0.0.1', 63215)
+2026-09-17 11:16:59,932 - INFO - User logged in: bob
+2026-09-17 11:17:27,354 - INFO - File transfer: bob -> charlie (1 - Introduction to Machine Learning (1).pdf)
